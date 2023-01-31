@@ -5,9 +5,8 @@ describe('FilterPipe', () => {
   let result;
 
   it('Transform Returns Array Without a Object', () => {
-    let value: never[] = [];
-    
     result = pipe.transform([], "1234");
+    
     expect(result).toEqual([]);
   });
 
