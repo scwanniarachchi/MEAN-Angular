@@ -20,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { OrderComponent } from './order/order.component';
 import { FooterComponent } from './footer/footer.component';
+import { SellerLoginComponent } from './seller-login/seller-login.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     NavComponent,
     OrderComponent,
-    FooterComponent
+    FooterComponent,
+    SellerLoginComponent
   ],
   imports: [
     BrowserModule,
