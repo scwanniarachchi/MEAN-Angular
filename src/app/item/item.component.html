@@ -1,0 +1,106 @@
+<!-- <main>
+    <br/>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Item</div>
+                <div class="card-body">
+                    <form [formGroup]="itemForm" (ngSubmit)="item()">
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Item Name</label>
+                            <div class="col-md-6">
+                                <input formControlName="name" type="text" id="name" class="form-control" name="name" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label  class="col-md-4 col-form-label text-md-right">Item Image</label>
+                            <div class="col-md-6">
+                                <input formControlName="image" type="file" class="form-control" name="image" (change)="selectImage($event)" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Price</label>
+                            <div class="col-md-6">
+                                <input formControlName="price" type="number" id="price" class="form-control" name="price" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Description</label>
+                            <div class="col-md-6">
+                                <input formControlName="description" type="text" id="description" class="form-control" name="description" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Availability</label>
+                            <div class="col-md-6">
+                                <input formControlName="availability" type="number" id="availability" class="form-control" name="availability" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-6">
+                                <button type="submit" class="btn btn-primary">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main> -->
+
+<section class="vh-100" style="margin-bottom: 100px;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center"
+                        style="background-color: rgb(252, 208, 244); border-radius: 15px;">
+                        <form [formGroup]="itemForm" (ngSubmit)="item()">
+                            <h3 class="mb-5">Add Item</h3>
+
+                            <div class="form-outline mb-4">
+                                <input formControlName="name" type="text"
+                                    class="form-control form-control-lg" placeholder="Enter Item Name" id="name" name="name" required/>
+                                <label class="form-label" for="typeEmailX-2">Item Name</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input formControlName="image" type="file" class="form-control form-control-lg" id="image" name="image" (change)="selectImage($event)" required>
+                                <label class="form-label" for="typePasswordX-2">Item Image</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input formControlName="price" type="number"
+                                    class="form-control form-control-lg" placeholder="Enter Your Address" id="price" name="price" required/>
+                                <label class="form-label" for="typePasswordX-2">Price</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input formControlName="description" type="text"
+                                    class="form-control form-control-lg" placeholder="Enter Description" id="description" name="description" required/>
+                                <label class="form-label" for="typePasswordX-2">Description</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input formControlName="availability" type="number" id="availability" name="availability"
+                                    class="form-control form-control-lg" placeholder="Enter Available Quentity" required/>
+                                <label class="form-label" for="typeEmailX-2">Availability</label>
+                            </div>
+
+                            <button class="btn btn-primary btn-lg btn-block" type="submit"
+                                style="padding-left: 30px; padding-right: 30px;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,124 @@
+<!-- <main>
+    <br/>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Signup</div>
+                <div class="card-body">
+                    <form [formGroup]="signupForm" (ngSubmit)="signup()">
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Name</label>
+                            <div class="col-md-6">
+                                <input formControlName="name" type="text" id="name" class="form-control" name="name" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Email</label>
+                            <div class="col-md-6">
+                                <input formControlName="email" type="email" id="email" class="form-control" name="email" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Address</label>
+                            <div class="col-md-6">
+                                <input formControlName="address" type="text" id="address" class="form-control" name="address" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Phone Number</label>
+                            <div class="col-md-6">
+                                <input formControlName="phone" type="text" id="phone" class="form-control" name="phone" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Username</label>
+                            <div class="col-md-6">
+                                <input formControlName="username" type="text" id="username" class="form-control" name="username" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                            <div class="col-md-6">
+                                <input formControlName="password" type="password" id="password" class="form-control" name="password" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-6">
+                                <button type="submit" class="btn btn-primary">
+                                    Signup
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main> -->
+
+<section class="vh-100" style="margin-bottom: 350px;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center"
+                        style="background-color: rgb(252, 208, 244); border-radius: 15px;">
+                        <form [formGroup]="signupForm" (ngSubmit)="signup()">
+                            <h3 class="mb-5">Buyer Register</h3>
+
+                            <div class="form-outline mb-4">
+                                <input formControlName="name" type="text" id="typeEmailX-2"
+                                    class="form-control form-control-lg" placeholder="Enter Your Name" />
+                                <label class="form-label" for="typeEmailX-2">Name</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input formControlName="email" type="email" id="typeEmailX-2"
+                                    class="form-control form-control-lg" placeholder="Enter Your Email" />
+                                <label class="form-label" for="typePasswordX-2">Email</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input formControlName="address" type="text" id="typeEmailX-2"
+                                    class="form-control form-control-lg" placeholder="Enter Your Address" />
+                                <label class="form-label" for="typePasswordX-2">Address</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input formControlName="phone" type="text" id="typeEmailX-2"
+                                    class="form-control form-control-lg" placeholder="Enter Your Phone Number" />
+                                <label class="form-label" for="typePasswordX-2">Phone Number</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input formControlName="username" type="text" id="typeEmailX-2"
+                                    class="form-control form-control-lg" placeholder="Enter Your Username" />
+                                <label class="form-label" for="typeEmailX-2">Username</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input formControlName="password" type="password" id="typeEmailX-2"
+                                    class="form-control form-control-lg" placeholder="Enter Your Password" />
+                                <label class="form-label" for="typePasswordX-2">Password</label>
+                            </div>
+
+                            <button class="btn btn-primary btn-lg btn-block" type="submit"
+                                style="padding-left: 30px; padding-right: 30px;">Register</button>
+                            <hr class="my-4">
+                            <p>
+                                Login buyer & seller From Here <a href="login" style="color: red;">Login</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

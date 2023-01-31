@@ -1,0 +1,29 @@
+<br/>
+<div *ngIf="item !== undefined" style="margin-bottom: 50px; margin-top: 20px;">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-5">
+                <div  class="card">
+                    <img src="http://localhost:4000/{{item.image}}">
+                </div>
+            </div>
+            <div class="col-6">
+                <h3>{{item.name}}</h3>
+                <h3>Rs. {{item.price}}</h3>
+                <h3>Available Quantity : {{item.availability}}</h3>
+                <p>Item Description{{item.description}}</p>
+                <br/>
+                <div class="col-md-6">
+                    <input (change)="setQ($event)" (keyup)="setQ($event)" type="number" id="quantity" min="0" max="{{item.availability}}" class="form-control" name="quantity" required>
+                </div>
+                <br/>
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-success" (click)="Cart()" >
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

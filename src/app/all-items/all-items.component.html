@@ -1,0 +1,27 @@
+<h1 style="text-align: center; margin-top: 20px;">
+    Item List!
+</h1>
+<br/>
+<div class="row">
+    <div class="col-12">
+        <input type="text" class="form-control" [(ngModel)]="search_items" placeholder="Search"/>
+    </div>
+</div>
+<div class="row" style="margin-bottom: 50px;">
+    <div class="col-2"></div>
+    <div class="col-12">
+        <div class="row">
+            <div class="col-3" *ngFor="let item of items | filter:search_items">
+                <br/>
+                <div class="card" style="width: 18rem;">
+                    <img src="http://localhost:4000/{{item.image}}" >
+                    <div class="card-body">
+                        <h5 class="cord-title">{{item.name}}</h5>
+                        <p class="card-text">{{item.price}}</p>
+                        <a [routerLink]="['/one_item', item._id]" class="btn btn-success">See More Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
