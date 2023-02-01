@@ -11,6 +11,7 @@ import { SellerComponent } from './seller/seller.component';
 import { SignupComponent } from './signup/signup.component';
 import { UserComponent } from './user/user.component';
 import { OrderComponent } from './order/order.component';
+import { SellerLoginComponent } from './seller-login/seller-login.component';
 
 const routes: Routes = [
   { path:'', redirectTo:'home' , pathMatch:'full' },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path:'one_item/:id', component:OneItemComponent },
   { path:'cart', component:CartComponent },
   { path:'order', component:OrderComponent },
+  { path:'sellerlogin', component:SellerLoginComponent }
 ];
 
 @NgModule({
