@@ -18,9 +18,7 @@ export class LoginComponent {
       username:[''],
       password:['']
     })
-    if(localStorage.getItem('privilege')=="seller"){
-      this.router.navigate(['seller'])
-    }else if(localStorage.getItem('privilege')=="user"){
+    if(localStorage.getItem('privilege')=="user"){
       this.router.navigate(['user'])
     }
   }
@@ -33,11 +31,7 @@ export class LoginComponent {
                 console.log(res.data)
                 this.loginForm.reset()
                 alert("login successful!")
-                if(res.data=="seller"){
-                  localStorage.setItem('privilege', 'seller');
-                  localStorage.setItem('id', res.id);
-                  this.router.navigate(['seller'])
-                }else{
+                if(res.data=="user"){
                   localStorage.setItem('privilege', 'user');
                   localStorage.setItem('id', res.id);
                   this.router.navigate(['user'])

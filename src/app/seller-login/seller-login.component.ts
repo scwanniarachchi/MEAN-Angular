@@ -18,10 +18,8 @@ export class SellerLoginComponent {
       username:[''],
       password:['']
     })
-    if(localStorage.getItem('privilege')=="seller"){
+     if(localStorage.getItem('privilege')=="seller"){
       this.router.navigate(['seller'])
-    }else if(localStorage.getItem('privilege')=="user"){
-      this.router.navigate(['user'])
     }
   }
   
